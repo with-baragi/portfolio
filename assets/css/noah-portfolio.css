@@ -86,6 +86,9 @@ header .colorlib-navbar-brand .colorlib-logo:focus-visible { outline: 2px solid 
 .noah-section .intro-heading span { color: #737076; }
 .portfolio-services .services-flex .one-third { width: 100%; padding-left: 0; }
 .portfolio-services .services { margin-bottom: 0; }
+.portfolio-services .experience-photo { margin: 0 0 20px; }
+.portfolio-services .experience-photo img { display: block; width: 100%; height: auto; }
+.portfolio-services .experience-photo figcaption { margin-top: 8px; color: #5f5b60; font-size: 14px; }
 .portfolio-services .services h3 { font: 500 24px/1.5 "Noto Serif KR", Georgia, serif; margin-bottom: 14px; }
 .portfolio-services .text-link { color: #784e94; text-decoration: underline; text-underline-offset: 4px; }
 
