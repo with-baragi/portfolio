@@ -80,8 +80,6 @@ header .colorlib-navbar-brand .colorlib-logo:focus-visible { outline: 2px solid 
 
 .portfolio-story { padding-block: 3em; max-width: 680px; }
 .portfolio-story h2 { font-size: 34px; }
-.portfolio-story .interests { display: flex; flex-wrap: wrap; gap: 8px 15px; }
-.portfolio-story .interests span { margin: 0; color: #5f5b60; font-size: 14px; }
 .noah-section { position: relative; padding: 10em 0; }
 .noah-section .intro-heading span { color: #737076; }
 .portfolio-services .services-flex .one-third { width: 100%; padding-left: 0; }
