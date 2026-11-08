@@ -5,7 +5,11 @@ This personal portfolio adapts the Noah HTML template by Colorlib.
 - Professor-provided collection: https://github.com/congchu/portfolio-collection/tree/main/noah-master
 - Original demo: https://congchu.github.io/portfolio-collection/noah-master/
 - Creator: https://colorlib.com/wp/template/noah/
-- The creator's template page identifies the license as CC BY 3.0: https://creativecommons.org/licenses/by/3.0/
+- A prior Colorlib listing identified Noah as CC BY 3.0: https://creativecommons.org/licenses/by/3.0/
+
+This adaptation uses the older release in the course collection. Colorlib's
+current commercial template terms differ: https://colorlib.com/wp/licence/
+Confirm the terms for the course snapshot before making this repository public.
 
 The original Bootstrap and Noah stylesheets are retained in `assets/vendor/noah/`.
 The source HTML is retained in `reference/noah-original.html` for comparison.
