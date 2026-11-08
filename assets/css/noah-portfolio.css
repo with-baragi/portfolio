@@ -45,10 +45,10 @@ header .colorlib-navbar-brand .colorlib-logo:focus-visible { outline: 2px solid 
 .portrait-front {
   background: radial-gradient(ellipse at 38% 22%, #f7ecdc, #e5d5bf 58%, #cbb8a2);
 }
-.portrait-reading, .reading-cover {
+.portrait-reading {
   background: radial-gradient(ellipse at 33% 23%, #e8f0f1, #b7cad0 55%, #829da9);
 }
-.portrait-slide img, .reading-cover img {
+.portrait-slide img {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -57,7 +57,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus-visible { outline: 2px solid 
   height: 108%;
   transform: translateX(-50%);
 }
-.portrait-reading img, .reading-cover img { left: 55%; height: 112%; }
+.portrait-reading img { left: 55%; height: 112%; }
 .portrait-controls { display: flex; align-items: center; justify-content: flex-end; margin-top: 6px; }
 .portrait-controls[hidden] { display: none; }
 .portrait-controls button { min-height: 36px; border: 0; background: transparent; color: #5f5b60; }
@@ -78,23 +78,42 @@ header .colorlib-navbar-brand .colorlib-logo:focus-visible { outline: 2px solid 
 .portfolio-services .text-link { color: #784e94; text-decoration: underline; text-underline-offset: 4px; }
 
 .moneyflow .work-img {
-  background: #e9e8eb url("../images/moneyflow-retirement-comparison.png") center / contain no-repeat;
+  background: #eee9e5 url("../images/moneyflow-cover.svg") center / cover no-repeat;
 }
 .moneyflow .work-img:focus-visible .display-t::after { opacity: 1; }
 .moneyflow .work-img:focus-visible .work-name { padding: 4.5em 3.5em; }
-.moneyflow .capture-caption { color: #5f5b60; font-size: 15px; }
 .moneyflow .desc .read a { font-size: 15px; letter-spacing: .02em; }
+.moneyflow-capture { border-top: 1px solid #dcd6d8; padding-top: 12px; }
+.moneyflow-capture summary { color: #784e94; cursor: pointer; }
+.moneyflow-capture figure { margin: 12px 0 0; }
+.moneyflow-capture img { display: block; width: 100%; height: auto; }
+.moneyflow-capture figcaption { margin-top: 8px; font-size: 14px; }
 
-.article .reading-cover { aspect-ratio: 4 / 5; max-height: 460px; }
-.article .reading-cover img { position: absolute; transform: translateX(-50%); }
-.article .reading-cover:hover img,
-.article .reading-cover:focus-visible img { transform: translateX(-50%) scale(1.1); }
+.article .reading-cover {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 6 / 5;
+  background: #eae3dd;
+  padding: clamp(22px, 5vw, 52px);
+}
+.article .reading-cover img {
+  display: block;
+  width: auto;
+  height: 100%;
+  min-height: 0;
+  max-height: 360px;
+  object-fit: contain;
+  box-shadow: 0 10px 26px #32242140;
+}
+.article .reading-cover:focus-visible img { transform: scale(1.1); }
 .article .reading-cover:focus-visible .overlay { opacity: 1; }
 .article .reading-cover:focus-visible .link { opacity: 1; bottom: 50px; }
 .article .reading-cover .link { left: 84%; }
 .article .reading-cover .link .read { font-size: 14px; letter-spacing: .1em; }
 .reading-note .desc .meta { font-size: 14px; letter-spacing: .03em; }
 .reading-note .desc h3 { font-size: 26px; margin-bottom: 18px; }
+.reading-note .cover-credit { font-size: 14px; }
+.reading-note .cover-credit a { color: #784e94; }
 
 .connection-links { display: flex; flex-wrap: wrap; gap: 12px 30px; }
 .connection-links a, .site-credit a { color: #784e94; }

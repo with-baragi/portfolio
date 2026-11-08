@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620">
+  <defs>
+    <linearGradient id="paper" x2="1" y2="1">
+      <stop stop-color="#f5f1ec"/>
+      <stop offset="1" stop-color="#ded6d2"/>
+    </linearGradient>
+    <linearGradient id="area" x2="0" y2="1">
+      <stop stop-color="#a49da5" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#a49da5" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#paper)" d="M0 0h1000v620H0z"/>
+  <path fill="none" stroke="#c9bec1" stroke-opacity=".7" d="M106 123h788M106 217h788M106 311h788M106 405h788M106 499h788M106 123v376M303 123v376M500 123v376M697 123v376M894 123v376"/>
+  <path fill="url(#area)" d="M106 431C249 400 352 263 480 208S701 282 894 409V499H106z"/>
+  <path fill="none" stroke="#817589" stroke-width="4" d="M106 431C249 400 352 263 480 208S701 282 894 409"/>
+  <path fill="none" stroke="#988475" stroke-width="4" stroke-dasharray="9 11" d="M106 431C249 400 352 263 480 208S722 165 894 321"/>
+</svg>

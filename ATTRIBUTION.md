@@ -14,6 +14,7 @@ The adapted page retains visible Colorlib credit. Its structure, text, images,
 navigation, and supplemental styling have been customized for 최원진.
 
 Both portraits were supplied by 최원진 and are stored as provided. Their backgrounds are rendered in CSS.
-The project image is a MoneyFlow screenshot using example inputs: https://moneyflow.baragi.ai.kr/
+The MoneyFlow details include a screenshot using example inputs: https://moneyflow.baragi.ai.kr/
+The reading note identifies the Korean edition of Yu Hua's To Live (ISBN 9788971847251). Cover by the publisher Green Forest (푸른숲), image source: https://image.aladin.co.kr/product/93/55/cover500/8971847255_2.jpg
 
 Upstream libraries retain their respective copyright and license notices.
