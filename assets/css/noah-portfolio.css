@@ -90,7 +90,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus-visible { outline: 2px solid 
 .portfolio-services .text-link { color: #784e94; text-decoration: underline; text-underline-offset: 4px; }
 
 .moneyflow .work-img {
-  background: #eee9e5 url("../images/moneyflow-cover.webp") center / cover no-repeat;
+  background: #eee9e5 url("../images/moneyflow-life-paths.webp") center / cover no-repeat;
 }
 .moneyflow .work-img:focus-visible .display-t::after { opacity: 1; }
 .moneyflow .work-img:focus-visible .work-name { padding: 4.5em 3.5em; }
@@ -153,4 +153,13 @@ header .colorlib-navbar-brand .colorlib-logo:focus-visible { outline: 2px solid 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
   .js .animate-box { opacity: 1; animation: none !important; }
+}
+
+@media (max-width: 600px) {
+  .moneyflow .work-img,
+  .moneyflow .work-img .display-t { height: clamp(180px, 60vw, 350px); }
+  .moneyflow .work-img .display-t { padding-bottom: 9px; }
+  .moneyflow .work-img .display-t .work-name,
+  .moneyflow .work-img:hover .display-t .work-name,
+  .moneyflow .work-img:focus-visible .display-t .work-name { padding: .5em .85em; }
 }
