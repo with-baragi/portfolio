@@ -90,7 +90,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus-visible { outline: 2px solid 
 .portfolio-services .text-link { color: #784e94; text-decoration: underline; text-underline-offset: 4px; }
 
 .moneyflow .work-img {
-  background: #eee9e5 url("../images/moneyflow-life-paths.webp") center / cover no-repeat;
+  background: #ece8e2 url("../images/moneyflow-geometry.svg") center / cover no-repeat;
 }
 .moneyflow .work-img:focus-visible .display-t::after { opacity: 1; }
 .moneyflow .work-img:focus-visible .work-name { padding: 4.5em 3.5em; }
