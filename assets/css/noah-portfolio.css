@@ -108,7 +108,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus-visible { outline: 2px solid 
   place-items: center;
   aspect-ratio: 6 / 5;
   background: #eae3dd;
-  padding: clamp(22px, 5vw, 52px);
+  padding: clamp(16px, 3vw, 32px);
 }
 .article .reading-cover img {
   display: block;
@@ -130,9 +130,9 @@ header .colorlib-navbar-brand .colorlib-logo:focus-visible { outline: 2px solid 
 .journal-entry .blog-img .link .read { font-size: 14px; letter-spacing: .1em; }
 .journal-entry .desc .meta { font-size: 14px; letter-spacing: .03em; }
 .journal-entry .desc h3 { font-size: 26px; margin-bottom: 18px; }
-.journal-extra { margin: 0; }
+.journal-extra summary { color: #784e94; cursor: pointer; }
 .journal-extra img { display: block; width: 100%; height: auto; }
-.journal-extra figcaption { margin-top: 8px; font-size: 14px; }
+.journal-extra[open] img { margin-top: 12px; }
 .reading-note .cover-credit { font-size: 14px; }
 .reading-note .cover-credit a { color: #784e94; }
 
@@ -146,7 +146,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus-visible { outline: 2px solid 
   .portfolio-about .about-desc .desc { padding-left: 0; }
   .portfolio-about .about-desc .rotate { display: none; }
   .portfolio-services .services { margin-bottom: 32px; }
-  .journal-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .journal-grid { grid-template-columns: minmax(0, 520px); justify-content: center; gap: 48px; }
 }
 
 @media (max-width: 768px) {
@@ -166,7 +166,6 @@ header .colorlib-navbar-brand .colorlib-logo:focus-visible { outline: 2px solid 
 }
 
 @media (max-width: 600px) {
-  .journal-grid { grid-template-columns: minmax(0, 1fr); gap: 48px; }
   .moneyflow .work-img,
   .moneyflow .work-img .display-t { height: clamp(180px, 60vw, 350px); }
   .moneyflow .work-img .display-t { padding-bottom: 9px; }
