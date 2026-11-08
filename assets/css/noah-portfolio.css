@@ -34,7 +34,9 @@ header .colorlib-navbar-brand .colorlib-logo:focus-visible { outline: 2px solid 
   line-height: 1.3;
 }
 .portfolio-about #hero-title span { font: inherit; color: inherit; }
-.portfolio-about .hero-intro { max-width: 18em; color: #39353a; font-size: clamp(18px, 2vw, 22px); line-height: 1.65; }
+.portfolio-about .hero-intro { color: #39353a; font-size: 18px; line-height: 1.65; }
+.portfolio-about .hero-intro, .portfolio-about .hero-detail { text-wrap: balance; }
+.portfolio-about :is(.hero-intro, .hero-detail) span { display: inline-block; max-width: 100%; }
 .portfolio-about .btn { min-height: 42px; font-size: 14px; letter-spacing: .03em; }
 .portfolio-portraits:not(.owl-loaded) .portrait-slide + .portrait-slide { display: none; }
 .portrait-slide {
