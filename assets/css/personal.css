@@ -29,7 +29,7 @@ header.site-header{display:flex;align-items:center;position:relative;padding:34p
 .ghost-word{position:absolute;top:-32px;left:calc(50% - 55px);font-family:"Playfair Display",Georgia,serif;font-size:190px;letter-spacing:-9px;line-height:1;color:#eeece6;pointer-events:none;user-select:none}
 .hero-grid{display:grid;grid-template-columns:410px 1fr;gap:112px;position:relative;align-items:center}
 .portrait-frame{position:relative;height:500px;overflow:hidden;background:#eeece6}
-.portrait img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:50% 22%;transform:scale(1.14) translateX(5%)}
+.portrait img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;transform:translateX(3.3%) scale(1.24)}
 .portrait figcaption{font-size:10px;letter-spacing:1px;color:var(--muted);padding-top:12px}
 .hero-copy{padding:20px 0 35px}
 .eyebrow{font-size:10px;letter-spacing:2.8px;color:var(--muted);margin-bottom:15px}
