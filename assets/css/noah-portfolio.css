@@ -101,6 +101,8 @@ header .colorlib-navbar-brand .colorlib-logo:focus-visible { outline: 2px solid 
 .moneyflow-capture img { display: block; width: 100%; height: auto; }
 .moneyflow-capture figcaption { margin-top: 8px; font-size: 14px; }
 
+.journal-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px; }
+.journal-grid .article { margin-bottom: 0; }
 .article .reading-cover {
   display: grid;
   place-items: center;
@@ -117,13 +119,20 @@ header .colorlib-navbar-brand .colorlib-logo:focus-visible { outline: 2px solid 
   object-fit: contain;
   box-shadow: 0 10px 26px #32242140;
 }
-.article .reading-cover:focus-visible img { transform: scale(1.1); }
-.article .reading-cover:focus-visible .overlay { opacity: 1; }
-.article .reading-cover:focus-visible .link { opacity: 1; bottom: 50px; }
-.article .reading-cover .link { left: 84%; }
-.article .reading-cover .link .read { font-size: 14px; letter-spacing: .1em; }
-.reading-note .desc .meta { font-size: 14px; letter-spacing: .03em; }
-.reading-note .desc h3 { font-size: 26px; margin-bottom: 18px; }
+.article .activity-cover { aspect-ratio: 6 / 5; background: #eae3dd; }
+.article .activity-cover img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.article .volunteer-cover img { object-position: 55% center; }
+.article .hiking-cover img { object-position: 65% center; }
+.journal-entry .blog-img:focus-visible img { transform: scale(1.1); }
+.journal-entry .blog-img:focus-visible .overlay { opacity: 1; }
+.journal-entry .blog-img:focus-visible .link { opacity: 1; bottom: 50px; }
+.journal-entry .blog-img .link { left: 84%; }
+.journal-entry .blog-img .link .read { font-size: 14px; letter-spacing: .1em; }
+.journal-entry .desc .meta { font-size: 14px; letter-spacing: .03em; }
+.journal-entry .desc h3 { font-size: 26px; margin-bottom: 18px; }
+.journal-extra { margin: 0; }
+.journal-extra img { display: block; width: 100%; height: auto; }
+.journal-extra figcaption { margin-top: 8px; font-size: 14px; }
 .reading-note .cover-credit { font-size: 14px; }
 .reading-note .cover-credit a { color: #784e94; }
 
@@ -137,6 +146,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus-visible { outline: 2px solid 
   .portfolio-about .about-desc .desc { padding-left: 0; }
   .portfolio-about .about-desc .rotate { display: none; }
   .portfolio-services .services { margin-bottom: 32px; }
+  .journal-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 768px) {
@@ -156,6 +166,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus-visible { outline: 2px solid 
 }
 
 @media (max-width: 600px) {
+  .journal-grid { grid-template-columns: minmax(0, 1fr); gap: 48px; }
   .moneyflow .work-img,
   .moneyflow .work-img .display-t { height: clamp(180px, 60vw, 350px); }
   .moneyflow .work-img .display-t { padding-bottom: 9px; }
