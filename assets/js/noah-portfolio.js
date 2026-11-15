@@ -65,11 +65,17 @@ $(function () {
 
   function setPlaying(enabled) {
     playing = enabled;
+    // This Owl version restarts its timer after transitions and refreshes.
+    // Persist the preference so manual selection and resizing stay paused.
+    carousel.options.autoplay = enabled;
+    carousel.settings.autoplay = enabled;
     portraits.trigger(enabled ? 'play.owl.autoplay' : 'stop.owl.autoplay');
     pause.textContent = enabled ? '자동 전환 멈춤' : '자동 전환 시작';
   }
 
-  portraits.on('translated.owl.carousel', updateSelection);
+  portraits.on('changed.owl.carousel translated.owl.carousel refreshed.owl.carousel', () => {
+    requestAnimationFrame(updateSelection);
+  });
   selectors.forEach((button, index) => button.addEventListener('click', () => {
     setPlaying(false);
     carousel.to(index, undefined, true);

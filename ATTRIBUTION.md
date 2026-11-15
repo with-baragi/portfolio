@@ -14,9 +14,9 @@ The adapted page retains visible Colorlib credit. Its structure, text, images,
 navigation, and supplemental styling have been customized for 최원진.
 
 Both portraits were supplied by 최원진 and are stored as provided. The limestone entrance and reading-room backgrounds are generated images applied through CSS.
-The volunteer, hiking, and CrossFit photographs were supplied by 최원진.
-The MoneyFlow cover uses a geometric illustration of one starting point and two outcomes.
-The MoneyFlow details include a screenshot using example inputs: https://moneyflow.baragi.ai.kr/
+The volunteer, hiking, exercise, lecture, and workshop photographs were supplied by 최원진.
+The MoneyFlow cover is an AI-generated editorial illustration blending photographic light with simplified architectural forms, a branching path, and Korean serif typography about alternative futures. It was generated with the built-in image generation tool and is stored at `assets/images/moneyflow-life-choices.png`.
+MoneyFlow service: https://moneyflow.baragi.ai.kr/
 The reading note identifies the Korean edition of Yu Hua's To Live (ISBN 9788971847251). Cover by the publisher Green Forest (푸른숲), image source: https://image.aladin.co.kr/product/93/55/cover500/8971847255_2.jpg
 
 Upstream libraries retain their respective copyright and license notices.

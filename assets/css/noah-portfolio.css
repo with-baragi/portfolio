@@ -34,6 +34,8 @@ header .colorlib-navbar-brand .colorlib-logo:focus-visible { outline: 2px solid 
   line-height: 1.3;
 }
 .portfolio-about #hero-title span { font: inherit; color: inherit; }
+.portfolio-about .hero-intro { color: #39353a; font-size: 18px; line-height: 1.65; }
+.portfolio-about .about-desc .desc { padding-left: 0; }
 .portfolio-about .btn { min-height: 42px; font-size: 14px; letter-spacing: .03em; }
 .portfolio-portraits:not(.owl-loaded) .portrait-slide + .portrait-slide { display: none; }
 .portrait-slide {
@@ -82,28 +84,27 @@ header .colorlib-navbar-brand .colorlib-logo:focus-visible { outline: 2px solid 
 .portfolio-story .story-copy { font-size: 17px; line-height: 1.85; }
 .noah-section { position: relative; padding: 10em 0; }
 .noah-section .intro-heading span { color: #737076; }
-.portfolio-services .services-flex .one-third { width: 100%; padding-left: 0; }
+.portfolio-services .services-flex .one-third { width: 100%; padding-inline: 0; }
 .portfolio-services .services { margin-bottom: 0; }
 .portfolio-services .experience-photo { margin: 0 0 20px; }
 .portfolio-services .experience-photo img { display: block; width: 100%; height: auto; }
 .portfolio-services .experience-photo figcaption { margin-top: 8px; color: #5f5b60; font-size: 14px; }
 .portfolio-services .services h3 { font: 500 24px/1.5 "Noto Serif KR", Georgia, serif; margin-bottom: 14px; }
+.portfolio-services .services p { line-height: 1.85; margin-bottom: 20px; }
 .portfolio-services .text-link { color: #784e94; text-decoration: underline; text-underline-offset: 4px; }
 
-.moneyflow .work-img {
-  background: #ece8e2 url("../images/moneyflow-geometry.svg") center / cover no-repeat;
-}
-.moneyflow .work-img:focus-visible .display-t::after { opacity: 1; }
-.moneyflow .work-img:focus-visible .work-name { padding: 4.5em 3.5em; }
+.work-entry.moneyflow { display: grid; grid-template-columns: 1.35fr 1fr; align-items: center; gap: 48px; margin-bottom: 0; }
+.moneyflow-preview { margin: 0; }
+.moneyflow-preview img { display: block; width: 100%; height: auto; }
+.moneyflow .desc { margin: 0; }
+.moneyflow .desc h3 { font-size: 28px; }
 .moneyflow .desc .read a { font-size: 15px; letter-spacing: .02em; }
-.moneyflow-capture { border-top: 1px solid #dcd6d8; padding-top: 12px; }
-.moneyflow-capture summary { color: #784e94; cursor: pointer; }
-.moneyflow-capture figure { margin: 12px 0 0; }
-.moneyflow-capture img { display: block; width: 100%; height: auto; }
-.moneyflow-capture figcaption { margin-top: 8px; font-size: 14px; }
 
-.journal-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px; }
-.journal-grid .article { margin-bottom: 0; }
+.journal-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 64px 32px; }
+.journal-grid .article { min-width: 0; margin-bottom: 0; }
+.journal-grid .article .blog-img { margin-bottom: 24px; }
+.journal-grid .reading-note { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr); align-items: start; gap: 48px; }
+.journal-grid .reading-note .blog-img { margin-bottom: 0; }
 .article .reading-cover {
   display: grid;
   place-items: center;
@@ -120,7 +121,8 @@ header .colorlib-navbar-brand .colorlib-logo:focus-visible { outline: 2px solid 
   object-fit: contain;
   box-shadow: 0 10px 26px #32242140;
 }
-.article .activity-cover { aspect-ratio: 6 / 5; background: #eae3dd; }
+.article .activity-cover { aspect-ratio: 4 / 3; background: #eae3dd; }
+.article .volunteer-cover { aspect-ratio: 4 / 3; }
 .article .activity-cover img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .article .volunteer-cover img { object-position: 55% center; }
 .article .hiking-cover img { object-position: 65% center; }
@@ -129,11 +131,10 @@ header .colorlib-navbar-brand .colorlib-logo:focus-visible { outline: 2px solid 
 .journal-entry .blog-img:focus-visible .link { opacity: 1; bottom: 50px; }
 .journal-entry .blog-img .link { left: 84%; }
 .journal-entry .blog-img .link .read { font-size: 14px; letter-spacing: .1em; }
-.journal-entry .desc .meta { font-size: 14px; letter-spacing: .03em; }
-.journal-entry .desc h3 { font-size: 26px; margin-bottom: 18px; }
-.journal-extra summary { color: #784e94; cursor: pointer; }
-.journal-extra img { display: block; width: 100%; height: auto; }
-.journal-extra[open] img { margin-top: 12px; }
+.journal-entry .desc .meta { position: static; display: block; padding: 0; margin-bottom: 12px; background: transparent; box-shadow: none; color: #737076; font-size: 14px; letter-spacing: .03em; }
+.journal-entry .desc h3 { font-size: 24px; line-height: 1.55; margin-bottom: 18px; }
+.journal-entry .desc p { line-height: 1.85; }
+.reading-note .desc h3 { font-size: 28px; }
 .reading-note .cover-credit { font-size: 14px; }
 .reading-note .cover-credit a { color: #784e94; }
 
@@ -142,35 +143,24 @@ header .colorlib-navbar-brand .colorlib-logo:focus-visible { outline: 2px solid 
 .site-credit, .site-credit span { color: #5f5b60; font-size: 14px; }
 
 @media (max-width: 991px) {
+  .portfolio-portraits, .portrait-controls { max-width: 390px; margin-inline: auto; }
+  .work-entry.moneyflow { grid-template-columns: 1fr; gap: 28px; }
   .portfolio-about .bold, .noah-section .bold { font-size: 60px; }
   .portfolio-about #hero-title { font-size: 40px; }
   .portfolio-about .about-desc .desc { padding-left: 0; }
   .portfolio-about .about-desc .rotate { display: none; }
   .portfolio-services .services { margin-bottom: 32px; }
-  .journal-grid { grid-template-columns: minmax(0, 520px); justify-content: center; gap: 48px; }
+  .journal-grid { grid-template-columns: minmax(0, 680px); justify-content: center; gap: 56px; }
+  .journal-grid .reading-note { grid-template-columns: 1fr; gap: 24px; }
+  .journal-grid .article .blog-img { max-width: 520px; }
 }
 
 @media (max-width: 768px) {
   .noah-section { padding: 5em 0; }
   .noah-section .rotate { display: none; }
-  .moneyflow .work-img .display-t { vertical-align: bottom; padding-bottom: 18px; }
-  .moneyflow .work-img .display-t .work-name,
-  .moneyflow .work-img:hover .display-t .work-name,
-  .moneyflow .work-img:focus-visible .display-t .work-name { padding: 1em 1.3em; }
-  .moneyflow .work-img .work-name h2,
-  .moneyflow .work-img:hover .work-name h2 { font-size: 23px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
   .js .animate-box { opacity: 1; animation: none !important; }
-}
-
-@media (max-width: 600px) {
-  .moneyflow .work-img,
-  .moneyflow .work-img .display-t { height: clamp(180px, 60vw, 350px); }
-  .moneyflow .work-img .display-t { padding-bottom: 9px; }
-  .moneyflow .work-img .display-t .work-name,
-  .moneyflow .work-img:hover .display-t .work-name,
-  .moneyflow .work-img:focus-visible .display-t .work-name { padding: .5em .85em; }
 }
